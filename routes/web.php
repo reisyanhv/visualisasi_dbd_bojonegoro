@@ -28,5 +28,7 @@ Route::get('/informasi', function () {
 });
 Route::get('/grafik',[ResultController::class, 'grafik']);
 Route::get('/peta', function () {
-    return view('peta');
+    return view('peta2');
 });
+// Route::get('/cluster/{id}',[CriteriaController::class, 'cluster']);
+

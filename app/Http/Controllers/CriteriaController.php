@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Criteria;
+use App\Models\Result;
 use App\Models\Year;
 use App\Models\Subdistrict;
 class CriteriaController extends Controller
@@ -31,6 +32,20 @@ class CriteriaController extends Controller
             $item['subdistrict'] = Subdistrict::where('id', $item->subdistrict_id)->first();
         }
         return view('data', compact('criterias'));
+    }
+
+    public function cluster()
+    {
+        $id=1;
+        $items = Criteria::where('year_id',$id)->get();
+        foreach ($items as $item) {
+            $item['tahun'] = $id;
+            $item['kecamatan'] = $item->subdistrict_id;
+            $item['nama_kecamatan'] = Subdistrict::where('id', $item->subdistrict_id)->first()['name'];
+            $item['cluster'] = Result::where(['year_id'=>$id,'subdistrict_id'=>$item->subdistrict_id])->first()['risk'];
+        }
+        return json_encode($items);
+        // return view('data', compact('criterias'));
     }
 
     /**

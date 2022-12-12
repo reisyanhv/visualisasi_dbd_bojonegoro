@@ -21,14 +21,14 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
-            <img src="../assets/img/peta.jpeg" class="mx-auto d-block">
-            {{-- <div id="map" style="height: 440px;"></div> --}}
+            {{-- <img src="../assets/img/peta.jpeg" class="mx-auto d-block"> --}}
+            <div id="map" style="height: 440px;"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-{{-- 
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script type="text/javascript">
@@ -43,7 +43,7 @@
           zoom: 11.4,
           layers: [peta] 
       });
-      var api = 'http://127.0.0.1:8000/api/clustering2016';
+      var api = 'http://127.0.0.1:8000/api/cluster2018';
       var dataCluster=[];
       var geojson=[];
       getData();
@@ -141,7 +141,7 @@
               // console.log(data_cluster);
           }      
           
-          $.getJSON("{{asset('assets')}}/bojonegoro v2.geojson", function(data_coordinate){
+          $.getJSON("{{asset('assets')}}/bojonegoro.geojson", function(data_coordinate){
                   for(i=0;i<28;i++){
                     // console.log(data_coordinate);
                       var kecamatan = data_coordinate.features[i].properties.kecamatan;
@@ -157,5 +157,5 @@
   });
 }
         
-  </script> --}}
+  </script>
 @endsection

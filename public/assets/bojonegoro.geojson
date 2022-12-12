@@ -11,7 +11,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Gayam"
+          "nama": "Gayam",
+          "kecamatan": 22
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -3518,7 +3519,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Gondang"
+          "nama": "Gondang",
+          "kecamatan": 7
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -9457,7 +9459,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kedewan"
+          "nama": "Kedewan",
+          "kecamatan": 28
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -19972,7 +19975,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Margomulyo"
+          "nama": "Margomulyo",
+          "kecamatan": 1
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -28931,7 +28935,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Ngraho"
+          "nama": "Ngraho",
+          "kecamatan": 2
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -35750,7 +35755,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kasiman"
+          "nama": "Kasiman",
+          "kecamatan": 27
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -43537,7 +43543,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Padangan"
+          "nama": "Padangan",
+          "kecamatan": 26
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -45828,7 +45835,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Baureno"
+          "nama": "Baureno",
+          "kecamatan": 12
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -50903,7 +50911,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Sukosewu"
+          "nama": "Sukosewu",
+          "kecamatan": 16
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -54626,7 +54635,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Temayang"
+          "nama": "Temayang",
+          "kecamatan": 8
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -62641,7 +62651,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Purwosari"
+          "nama": "Purwosari",
+          "kecamatan": 25
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -67552,7 +67563,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Ngambon"
+          "nama": "Ngambon",
+          "kecamatan": 4
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -71575,7 +71587,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Sekar"
+          "nama": "Sekar",
+          "kecamatan": 5
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -77358,7 +77371,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Sugihwaras"
+          "nama": "Sugihwaras",
+          "kecamatan": 9
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -83445,7 +83459,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kepohbaru"
+          "nama": "Kepohbaru",
+          "kecamatan": 11
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -92464,7 +92479,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kedungadem"
+          "nama": "Kedungadem",
+          "kecamatan": 10
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -102887,7 +102903,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kapas"
+          "nama": "Kapas",
+          "kecamatan": 17
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -105686,7 +105703,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Ngasem"
+          "nama": "Ngasem",
+          "kecamatan": 21
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -114617,7 +114635,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Tambakrejo"
+          "nama": "Tambakrejo",
+          "kecamatan": 3
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -123688,7 +123707,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kanor"
+          "nama": "Kanor",
+          "kecamatan": 13
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -127219,7 +127239,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Malo"
+          "nama": "Malo",
+          "kecamatan": 24
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -131146,7 +131167,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Sumberejo"
+          "nama": "Sumberejo",
+          "kecamatan": 14
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -135549,7 +135571,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Kalitidu"
+          "nama": "Kalitidu",
+          "kecamatan": 23
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -139284,7 +139307,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Trucuk"
+          "nama": "Trucuk",
+          "kecamatan": 19
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -143243,7 +143267,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Balen"
+          "nama": "Balen",
+          "kecamatan": 15
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -148174,7 +148199,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Bubulan"
+          "nama": "Bubulan",
+          "kecamatan": 6
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -151857,7 +151883,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Dander"
+          "nama": "Dander",
+          "kecamatan": 20
         },
         "geometry": {
           "type": "MultiPolygon",
@@ -156216,7 +156243,8 @@
       {
         "type": "Feature",
         "properties": {
-          "kecamatan": "Bojonegoro"
+          "nama": "Bojonegoro",
+          "kecamatan": 18
         },
         "geometry": {
           "type": "MultiPolygon",
