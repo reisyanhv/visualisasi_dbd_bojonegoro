@@ -9,8 +9,9 @@
           <div class="row">
             <div class="col-lg-6 col-7">
               <h5>Informasi DBD</h5>
+              <br>
               <h6 class="mb-0">Pengertian</h6>
-              <p class="text-sm">
+              <p class="text-sm font-weight-normal">
                 Demam berdarah dengue atau DBD merupakan penyakit mudah menular yang berasal dari gigitan nyamuk Aedes aegypti dan Aedes albopictus. Penyakit ini disebabkan oleh salah satu dari empat virus dengue.
               </p>
               <h6 class="mb-0">Gejala</h6>
@@ -37,7 +38,7 @@
     <div class="col-lg-4 col-md-6">
       <div class="card h-100">
         <div class="card-header pb-0">
-          <h6>Aedes Aegypti</h6>
+          <h6 class="text-center">Aedes Aegypti</h6>
           <img src="../assets/img/nyamukdbd.jpg" class="img-fluid">
         </div>
       </div>

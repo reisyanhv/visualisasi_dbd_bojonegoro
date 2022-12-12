@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+  @yield('grafik')
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
