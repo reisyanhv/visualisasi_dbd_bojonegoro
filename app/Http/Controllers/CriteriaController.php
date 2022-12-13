@@ -34,7 +34,7 @@ class CriteriaController extends Controller
         return view('data', compact('criterias'));
     }
 
-    public function cluster()
+    public function cluster2018()
     {
         $id=1;
         $items = Criteria::where('year_id',$id)->get();
@@ -47,6 +47,50 @@ class CriteriaController extends Controller
         return json_encode($items);
         // return view('data', compact('criterias'));
     }
+
+    public function cluster2019()
+    {
+        $id=2;
+        $items = Criteria::where('year_id',$id)->get();
+        foreach ($items as $item) {
+            $item['tahun'] = $id;
+            $item['kecamatan'] = $item->subdistrict_id;
+            $item['nama_kecamatan'] = Subdistrict::where('id', $item->subdistrict_id)->first()['name'];
+            $item['cluster'] = Result::where(['year_id'=>$id,'subdistrict_id'=>$item->subdistrict_id])->first()['risk'];
+        }
+        return json_encode($items);
+        // return view('data', compact('criterias'));
+    }
+
+    public function cluster2020()
+    {
+        $id=3;
+        $items = Criteria::where('year_id',$id)->get();
+        foreach ($items as $item) {
+            $item['tahun'] = $id;
+            $item['kecamatan'] = $item->subdistrict_id;
+            $item['nama_kecamatan'] = Subdistrict::where('id', $item->subdistrict_id)->first()['name'];
+            $item['cluster'] = Result::where(['year_id'=>$id,'subdistrict_id'=>$item->subdistrict_id])->first()['risk'];
+        }
+        return json_encode($items);
+        // return view('data', compact('criterias'));
+    }
+
+    public function cluster2021()
+    {
+        $id=4;
+        $items = Criteria::where('year_id',$id)->get();
+        foreach ($items as $item) {
+            $item['tahun'] = $id;
+            $item['kecamatan'] = $item->subdistrict_id;
+            $item['nama_kecamatan'] = Subdistrict::where('id', $item->subdistrict_id)->first()['name'];
+            $item['cluster'] = Result::where(['year_id'=>$id,'subdistrict_id'=>$item->subdistrict_id])->first()['risk'];
+        }
+        return json_encode($items);
+        // return view('data', compact('criterias'));
+    }
+
+    
 
     /**
      * Show the form for creating a new resource.

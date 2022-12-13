@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\PredictionCriteria;
 use App\Models\Year;
+use App\Models\PredictionResult;
 use App\Models\Subdistrict;
 
 class PredictionCriteriaController extends Controller
@@ -22,6 +23,20 @@ class PredictionCriteriaController extends Controller
             $item['subdistrict'] = Subdistrict::where('id', $item->subdistrict_id)->first();
         }
         return view('data', compact('criterias'));
+    }
+
+    public function cluster_prediksi()
+    {
+        $id=5;
+        $items = PredictionCriteria::where('year_id',$id)->get();
+        foreach ($items as $item) {
+            $item['tahun'] = $id;
+            $item['kecamatan'] = $item->subdistrict_id;
+            $item['nama_kecamatan'] = Subdistrict::where('id', $item->subdistrict_id)->first()['name'];
+            $item['cluster'] = PredictionResult::where(['year_id'=>$id,'subdistrict_id'=>$item->subdistrict_id])->first()['risk'];
+        }
+        return json_encode($items);
+        // return view('data', compact('criterias'));
     }
 
     /**

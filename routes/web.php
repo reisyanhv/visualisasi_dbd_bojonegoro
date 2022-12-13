@@ -28,7 +28,28 @@ Route::get('/informasi', function () {
 });
 Route::get('/grafik',[ResultController::class, 'grafik']);
 Route::get('/peta', function () {
-    return view('peta2');
+    $tahun = '2018';
+    return view('peta2018', compact('tahun'));
+});
+Route::get('/peta2018', function () {
+    $tahun = '2018';
+    return view('peta2018', compact('tahun'));
+});
+Route::get('/peta2019', function () {
+    $tahun = '2019';
+    return view('peta2019', compact('tahun'));
+});
+Route::get('/peta2020', function () {
+    $tahun = '2020';
+    return view('peta2020', compact('tahun'));
+});
+Route::get('/peta2021', function () {
+    $tahun = '2021';
+    return view('peta2021', compact('tahun'));
+});
+Route::get('/peta_prediksi', function () {
+    $tahun = 'Prediksi';
+    return view('peta_prediksi', compact('tahun'));
 });
 // Route::get('/cluster/{id}',[CriteriaController::class, 'cluster']);
 
