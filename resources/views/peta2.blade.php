@@ -180,8 +180,10 @@
                 
             }
         });
-        console.log(dataCluster);
+        // console.log(dataCluster);
     }
+
+    
              
         </script>
     </section>
