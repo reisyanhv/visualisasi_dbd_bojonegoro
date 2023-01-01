@@ -26,7 +26,7 @@ Route::get('/prediksi', [PredictionCriteriaController::class, 'index']);
 Route::get('/informasi', function () {
     return view('informasi');
 });
-Route::get('/grafik',[ResultController::class, 'grafik']);
+Route::get('/grafik', [ResultController::class, 'grafik']);
 Route::get('/peta', function () {
     $tahun = '2018';
     return view('peta2018', compact('tahun'));
@@ -52,4 +52,19 @@ Route::get('/peta_prediksi', function () {
     return view('peta_prediksi', compact('tahun'));
 });
 // Route::get('/cluster/{id}',[CriteriaController::class, 'cluster']);
-
+Route::get('/kmeans2018', function () {
+    $tahun = '2018';
+    return view('kmeans/kmeans2018', compact('tahun'));
+});
+Route::get('/kmeans2019', function () {
+    $tahun = '2019';
+    return view('kmeans/kmeans2019', compact('tahun'));
+});
+Route::get('/kmeans2020', function () {
+    $tahun = '2020';
+    return view('kmeans/kmeans2020', compact('tahun'));
+});
+Route::get('/kmeans2021', function () {
+    $tahun = '2021';
+    return view('kmeans/kmeans2021', compact('tahun'));
+});
